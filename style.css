@@ -1,59 +1,107 @@
-/* ===== CSS Styling Section ===== */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to right, #e0f7fa, #e1bee7);
-    color: #333;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-header {
+header, footer {
     background-color: #4caf50;
     color: white;
-    padding: 20px 0;
-    font-size: 28px;
+    padding: 15px 0;
+    font-size: 24px;
     font-weight: bold;
 }
 
-main {
-    padding: 30px;
+nav.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: white;
+    padding: 15px;
 }
 
-img {
-    border-radius: 10px;
-    margin: 20px 0;
-    width: 250px;
-}
-
-a {
-    color: #0d47a1;
+nav a {
     text-decoration: none;
     font-weight: bold;
+    color: #0d47a1;
 }
 
-a:hover {
+nav a:hover {
     text-decoration: underline;
 }
 
+form {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: #ffffffaa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #888;
+}
+
 button {
-    background-color: #ff9800;
-    border: none;
+    background: #ff9800;
     color: white;
-    padding: 12px 24px;
-    font-size: 16px;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 12px;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #f57c00;
+    background: #f57c00;
 }
 
-footer {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 0;
-    margin-top: 40px;
+.grid-box {
+    margin: 20px auto;
+    display: grid;
+    width: 90%;
+    max-width: 600px;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+}
+
+.box {
+    background: #ffffffaa;
+    padding: 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px gray;
+}
+
+#taskInput {
+    width: 60%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #666;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#taskList li {
+    background: white;
+    padding: 12px;
+    width: 60%;
+    margin: 8px auto;
+    border-radius: 6px;
+    box-shadow: 0 0 8px gray;
+    display: flex;
+    justify-content: space-between;
 }
